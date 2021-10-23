@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+}
+#container marquee{
+   padding: 10px;
+    height: 50px;
+    width:300px;
+    position: relative;
+    left: 600px;
+    top:400px;
+   font-size: 28px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    color: darkblue;
+}
+#container #speedScrolling {
+    height:60px;
+    width:200px;
+    
+    position: relative;
+    left: 700px;
+    top:600px;
+    background-color: rgba(109, 169, 238, 0.4);
+}
+#container #speedScrolling  label span{
+    font-size: 25px;
+    padding: 0px 10px 10px 10px;
+}
+#container #speedScrolling #speed{
+    height: 45px;
+    width:50px;
+    background-color: lightblue;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width:800px){
+    #container {
+        height:100vh;
+        width:100%;
+    }
+    #container marquee {
+        position: relative;
+        left:100px;
+    }
+    #container #speedScrolling{
+        left:100px;
+    }
+}

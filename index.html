@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Text Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <marquee scrollamount="1" id="mymarquee">I Love Myself!!!!!!!!!!!!</marquee>
+        <div id="speedScrolling">
+        <label for="speed" ><span>Speed : </span></label>
+        <input type="number" name="speed" id="speed" value="1" min="0" max="1000"  onchange="changeTheValue(this.value)">
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
